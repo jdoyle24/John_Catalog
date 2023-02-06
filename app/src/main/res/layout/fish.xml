@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="2dp"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/fishImageID"
+            android:background="@android:color/background_dark"
+            android:layout_width="90dp"
+            android:layout_height="90dp" />
+
+        <TextView
+            android:id="@+id/fishNameID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/fishImageID"
+            android:paddingLeft="5dp"
+            android:text="Fish Name"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/binomialNameID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/conservationStatusID"
+            android:layout_toRightOf="@id/fishImageID"
+            android:padding="5dp"
+            android:text="Binomial Name" />
+
+        <TextView
+            android:id="@+id/conservationStatusID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fishNameID"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/fishImageID"
+            android:padding="5dp"
+            android:text="Conservation Status" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
